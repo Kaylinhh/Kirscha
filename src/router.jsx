@@ -15,7 +15,7 @@ export const router = createBrowserRouter([
       { index: true, element: <Home /> },
       { path: 'designs', element: <Designs /> },
       { path: 'artistes', element: <Artists /> },
-      { path: 'artistes/:id', element: <ArtistDetail /> },
+      { path: 'artistes/:name', element: <ArtistDetail /> },
       { path: 'supports', element: <Supports /> },
       { path: 'profil', element: <Profile /> },
     ],

@@ -7,7 +7,7 @@ import fs from 'fs'
 import path from 'path'
 
 const files = [
-  // --- designs (used as artist preview works + design grid) ---
+  // --- previewWorks (used in ArtistCard 2x2 grid, needs consistent 4:3-ish ratio) ---
   { file: 'designs/s4ssybug-1.jpg', w: 500, h: 600, seed: 's4ssybug1' },
   { file: 'designs/s4ssybug-2.jpg', w: 500, h: 600, seed: 's4ssybug2' },
   { file: 'designs/s4ssybug-3.jpg', w: 500, h: 600, seed: 's4ssybug3' },
@@ -20,10 +20,22 @@ const files = [
   { file: 'designs/vanilla-2.jpg', w: 500, h: 600, seed: 'vanilla2' },
   { file: 'designs/vanilla-3.jpg', w: 500, h: 600, seed: 'vanilla3' },
   { file: 'designs/vanilla-4.jpg', w: 500, h: 600, seed: 'vanilla4' },
-  { file: 'designs/minimals-1.jpg', w: 500, h: 600, seed: 'minimals1' },
-  { file: 'designs/minimals-2.jpg', w: 500, h: 600, seed: 'minimals2' },
-  { file: 'designs/minimals-3.jpg', w: 500, h: 600, seed: 'minimals3' },
-  { file: 'designs/minimals-4.jpg', w: 500, h: 600, seed: 'minimals4' },
+  { file: 'designs/juusdrawings-1.jpg', w: 500, h: 600, seed: 'juusdrawings1' },
+  { file: 'designs/juusdrawings-2.jpg', w: 500, h: 600, seed: 'juusdrawings2' },
+  { file: 'designs/juusdrawings-3.jpg', w: 500, h: 600, seed: 'juusdrawings3' },
+  { file: 'designs/juusdrawings-4.jpg', w: 500, h: 600, seed: 'juusdrawings4' },
+
+  // --- works (used in ArtistDetail masonry grid — deliberately varied ratios) ---
+  // portrait (tall)
+  { file: 'designs/s4ssybug-5.jpg', w: 500, h: 800, seed: 's4ssybug5' },
+  // landscape (wide/short)
+  { file: 'designs/s4ssybug-6.jpg', w: 600, h: 380, seed: 's4ssybug6' },
+  { file: 'designs/minamala-5.jpg', w: 500, h: 750, seed: 'minamala5' },
+  { file: 'designs/minamala-6.jpg', w: 600, h: 400, seed: 'minamala6' },
+  { file: 'designs/vanilla-5.jpg', w: 500, h: 500, seed: 'vanilla5' },
+  { file: 'designs/vanilla-6.jpg', w: 600, h: 850, seed: 'vanilla6' },
+  { file: 'designs/juusdrawings-5.jpg', w: 600, h: 420, seed: 'juusdrawings5' },
+  { file: 'designs/juusdrawings-6.jpg', w: 500, h: 700, seed: 'juusdrawings6' },
 
   // --- supports (category grid on Supports page) ---
   { file: 'supports/textiles.jpg', w: 600, h: 400, seed: 'textiles' },

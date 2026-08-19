@@ -2,7 +2,7 @@ import { Link } from 'react-router-dom'
 
 function ArtistCard({ artist }) {
   return (
-    <Link to={`/artistes/${artist.id}`} className="block pb-6">
+    <Link to={`/artistes/${encodeURIComponent(artist.name)}`} className="block pb-6">
       <div className="relative">
         <div className="grid grid-cols-2 grid-rows-2 gap-1 aspect-4/3 overflow-hidden rounded-md">
           {artist.previewWorks.map((work, i) => (

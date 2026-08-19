@@ -1,54 +1,88 @@
-// src/data/data.js
-
 // ===== ARTISTS =====
 export const artists = [
   {
     id: 'a1',
     name: '_s4ssybug_',
     bio: "Hello! Je suis étudiante en art et fashion victim avérée. Mon style s'inspire énormément des mangas dans la forme et de mes passions dans le fond :)",
-    social: '@_s4ssybug_',
+    social: '@_s455ybug_',
+    instagramUrl: 'https://instagram.com/_s455ybug_',
     previewWorks: [
       '/images/designs/s4ssybug-1.jpg',
       '/images/designs/s4ssybug-2.jpg',
       '/images/designs/s4ssybug-3.jpg',
       '/images/designs/s4ssybug-4.jpg',
     ],
+    works: [
+      '/images/designs/s4ssybug-1.jpg',
+      '/images/designs/s4ssybug-2.jpg',
+      '/images/designs/s4ssybug-3.jpg',
+      '/images/designs/s4ssybug-4.jpg',
+      '/images/designs/s4ssybug-5.jpg',
+      '/images/designs/s4ssybug-6.jpg',
+    ]
   },
   {
     id: 'a2',
     name: 'minamala_',
     bio: "Illustratrice freelance, fan de contrastes forts et de noir & blanc. J'aime raconter des histoires en une seule image.",
-    social: '@minamala_',
+    social: '@minamala__',
+    instagramUrl: 'https://instagram.com/minamala__',
     previewWorks: [
       '/images/designs/minamala-1.jpg',
       '/images/designs/minamala-2.jpg',
       '/images/designs/minamala-3.jpg',
       '/images/designs/minamala-4.jpg',
     ],
+    works: [
+      '/images/designs/minamala-1.jpg',
+      '/images/designs/minamala-2.jpg',
+      '/images/designs/minamala-3.jpg',
+      '/images/designs/minamala-4.jpg',
+      '/images/designs/minamala-5.jpg',
+      '/images/designs/minamala-6.jpg',
+    ]
   },
   {
     id: 'a3',
     name: 'vanillaandcrimes',
     bio: "Pop art, humour noir et couleurs criardes. Je dessine ce qui me fait rire (ou pas).",
     social: '@vanillaandcrimes',
+    instagramUrl: 'https://instagram.com/vanillaandcrimes',
     previewWorks: [
       '/images/designs/vanilla-1.jpg',
       '/images/designs/vanilla-2.jpg',
       '/images/designs/vanilla-3.jpg',
       '/images/designs/vanilla-4.jpg',
     ],
+    works: [
+      '/images/designs/vanilla-1.jpg',
+      '/images/designs/vanilla-2.jpg',
+      '/images/designs/vanilla-3.jpg',
+      '/images/designs/vanilla-4.jpg',
+      '/images/designs/vanilla-5.jpg',
+      '/images/designs/vanilla-6.jpg'
+    ]
   },
   {
     id: 'a4',
-    name: 'minimals_',
-    bio: "Traits épurés, formes simples. Le moins possible pour dire le plus possible.",
-    social: '@minimals_',
+    name: 'juusdrawings',
+    bio: "Juust drawing cute stuff ⭐",
+    social: '@juusdrawings',
+    instagramUrl: 'https://instagram.com/juusdrawings',
     previewWorks: [
-      '/images/designs/minimals-1.jpg',
-      '/images/designs/minimals-2.jpg',
-      '/images/designs/minimals-3.jpg',
-      '/images/designs/minimals-4.jpg',
+      '/images/designs/juusdrawings-1.jpg',
+      '/images/designs/juusdrawings-2.jpg',
+      '/images/designs/juusdrawings-3.jpg',
+      '/images/designs/juusdrawings-4.jpg',
     ],
+    works: [
+      '/images/designs/juusdrawings-1.jpg',
+      '/images/designs/juusdrawings-2.jpg',
+      '/images/designs/juusdrawings-3.jpg',
+      '/images/designs/juusdrawings-4.jpg',
+      '/images/designs/juusdrawings-5.jpg',
+      '/images/designs/juusdrawings-6.jpg'
+    ]
   },
 ]
 
