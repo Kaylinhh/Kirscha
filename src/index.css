@@ -1,0 +1,30 @@
+@import "tailwindcss";
+
+@font-face {
+  font-family: 'Noot';
+  src: url('/fonts/Noot-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Now';
+  src: url('/fonts/Now-Regular.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@theme {
+  --font-display: 'Noot', sans-serif;
+  --font-body: 'Now', sans-serif;
+
+  --color-kirscha-green-900: #1f2f0a;
+  --color-kirscha-green-700: #4d6133;
+  --color-kirscha-green-400: #a8af92;
+  --color-kirscha-green-100: #fef8eb;
+
+  --color-kirscha-purple-900: #300531;
+  --color-kirscha-purple-700: #603361;
+  --color-kirscha-purple-400: #af9ebb;
+  --color-kirscha-purple-100: #ebeffe;
+}
