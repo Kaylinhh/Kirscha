@@ -139,54 +139,12 @@ export const supportCategories = [
 
 // ===== PRINTERS (fake partners, Bordeaux coordinates) =====
 export const printers = [
-  {
-    id: 'p1',
-    name: 'Popelup',
-    lat: 44.8404,
-    lng: -0.5805,
-    address: '12 rue Sainte-Catherine, Bordeaux',
-    services: ['Textiles', 'Papier'],
-  },
-  {
-    id: 'p2',
-    name: 'Imprimeur B',
-    lat: 44.8378,
-    lng: -0.5792,
-    address: "5 cours de l'Intendance, Bordeaux",
-    services: ['Vaisselle', 'Accessoires'],
-  },
-  {
-    id: 'p3',
-    name: 'Imprimeur C',
-    lat: 44.8512,
-    lng: -0.5638,
-    address: '20 quai de Brazza, Bordeaux',
-    services: ['Textiles'],
-  },
-  {
-    id: 'p4',
-    name: 'Imprimerie D',
-    lat: 44.8291,
-    lng: -0.5723,
-    address: '8 rue du Palais Gallien, Bordeaux',
-    services: ['Papier', 'Accessoires'],
-  },
-  {
-    id: 'p5',
-    name: 'Ça imprime ici',
-    lat: 44.8456,
-    lng: -0.5901,
-    address: '3 place Gambetta, Bordeaux',
-    services: ['Vaisselle', 'Textiles'],
-  },
-  {
-    id: 'p6',
-    name: 'Print & Fun',
-    lat: 44.8203,
-    lng: -0.5654,
-    address: '17 avenue Thiers, Bordeaux',
-    services: ['Accessoires', 'Papier'],
-  },
+  { id: 'p1', name: 'Popelup', lat: 44.8404, lng: -0.575, address: '12 rue Sainte-Catherine, Bordeaux', services: ['Textiles', 'Papier'] },
+  { id: 'p2', name: 'Imprimeur B', lat: 44.842, lng: -0.576, address: "5 cours de l'Intendance, Bordeaux", services: ['Vaisselle', 'Accessoires'] },
+  { id: 'p3', name: 'Imprimeur C', lat: 44.846, lng: -0.556, address: '20 quai de Brazza, Bordeaux', services: ['Textiles'] },
+  { id: 'p4', name: 'Imprimerie D', lat: 44.843, lng: -0.581, address: '8 rue du Palais Gallien, Bordeaux', services: ['Papier', 'Accessoires'] },
+  { id: 'p5', name: 'Ça imprime ici', lat: 44.841, lng: -0.576, address: '3 place Gambetta, Bordeaux', services: ['Vaisselle', 'Textiles'] },
+  { id: 'p6', name: 'Print & Fun', lat: 44.831, lng: -0.598, address: '17 avenue Thiers, Bordeaux', services: ['Accessoires', 'Papier'] },
 ]
 
 // ===== ROOM COOKIES ("Mon chez moi" — homemade cookies preference system) =====
