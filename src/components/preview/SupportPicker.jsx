@@ -8,7 +8,7 @@ function SupportPicker({ artworkImage, onBack }) {
   const category = supportCategories.find((c) => c.id === activeCategory)
 
   return (
-    <div className="flex flex-col sm:flex-row gap-0 mt-10 -mx-30">
+    <div className="flex flex-col sm:flex-row gap-0 mt-10 mx-50">
       <img
         src={previewImage}
         alt=""
@@ -30,24 +30,24 @@ function SupportPicker({ artworkImage, onBack }) {
         <div className="flex flex-col gap-3">
           {!category &&
             supportCategories.map((cat) => (
-              <button
+                <button
                 key={cat.id}
                 onClick={() => setActiveCategory(cat.id)}
-                className="bg-kirscha-green-100 text-kirscha-green-700 font-body font-semibold px-6 py-3 rounded-full text-left"
-              >
-                {cat.label} →
-              </button>
+                className="bg-kirscha-green-100 hover:bg-kirscha-green-400 transition text-kirscha-green-700 font-body font-semibold px-6 py-3 rounded-full text-left"
+                >
+                {cat.label}
+                </button>
             ))}
 
-          {category &&
+            {category &&
             category.items.map((item) => (
-              <button
+                <button
                 key={item.id}
                 onClick={() => setPreviewImage(item.mockup)}
-                className="bg-transparent border border-kirscha-green-100 text-kirscha-green-100 font-body font-semibold px-6 py-3 rounded-full text-left"
-              >
-                {item.label} →
-              </button>
+                className="bg-transparent hover:bg-kirscha-green-900 transition border border-kirscha-green-100 text-kirscha-green-100 font-body font-semibold px-6 py-3 rounded-full text-left"
+                >
+                {item.label}
+                </button>
             ))}
         </div>
       </div>

@@ -6,37 +6,28 @@
 import fs from 'fs'
 import path from 'path'
 
-const files = [
-  // --- previewWorks (used in ArtistCard 2x2 grid, needs consistent 4:3-ish ratio) ---
-  { file: 'designs/s4ssybug-1.jpg', w: 500, h: 600, seed: 's4ssybug1' },
-  { file: 'designs/s4ssybug-2.jpg', w: 500, h: 600, seed: 's4ssybug2' },
-  { file: 'designs/s4ssybug-3.jpg', w: 500, h: 600, seed: 's4ssybug3' },
-  { file: 'designs/s4ssybug-4.jpg', w: 500, h: 600, seed: 's4ssybug4' },
-  { file: 'designs/minamala-1.jpg', w: 500, h: 600, seed: 'minamala1' },
-  { file: 'designs/minamala-2.jpg', w: 500, h: 600, seed: 'minamala2' },
-  { file: 'designs/minamala-3.jpg', w: 500, h: 600, seed: 'minamala3' },
-  { file: 'designs/minamala-4.jpg', w: 500, h: 600, seed: 'minamala4' },
-  { file: 'designs/vanilla-1.jpg', w: 500, h: 600, seed: 'vanilla1' },
-  { file: 'designs/vanilla-2.jpg', w: 500, h: 600, seed: 'vanilla2' },
-  { file: 'designs/vanilla-3.jpg', w: 500, h: 600, seed: 'vanilla3' },
-  { file: 'designs/vanilla-4.jpg', w: 500, h: 600, seed: 'vanilla4' },
-  { file: 'designs/juusdrawings-1.jpg', w: 500, h: 600, seed: 'juusdrawings1' },
-  { file: 'designs/juusdrawings-2.jpg', w: 500, h: 600, seed: 'juusdrawings2' },
-  { file: 'designs/juusdrawings-3.jpg', w: 500, h: 600, seed: 'juusdrawings3' },
-  { file: 'designs/juusdrawings-4.jpg', w: 500, h: 600, seed: 'juusdrawings4' },
+const artistPrefixes = ['s4ssybug', 'minamala', 'vanilla', 'minimals']
 
-  // --- works (used in ArtistDetail masonry grid — deliberately varied ratios) ---
-  // portrait (tall)
-  { file: 'designs/s4ssybug-5.jpg', w: 500, h: 800, seed: 's4ssybug5' },
-  // landscape (wide/short)
-  { file: 'designs/s4ssybug-6.jpg', w: 600, h: 380, seed: 's4ssybug6' },
-  { file: 'designs/minamala-5.jpg', w: 500, h: 750, seed: 'minamala5' },
-  { file: 'designs/minamala-6.jpg', w: 600, h: 400, seed: 'minamala6' },
-  { file: 'designs/vanilla-5.jpg', w: 500, h: 500, seed: 'vanilla5' },
-  { file: 'designs/vanilla-6.jpg', w: 600, h: 850, seed: 'vanilla6' },
-  { file: 'designs/juusdrawings-5.jpg', w: 600, h: 420, seed: 'juusdrawings5' },
-  { file: 'designs/juusdrawings-6.jpg', w: 500, h: 700, seed: 'juusdrawings6' },
+// 6 designs per artist, varied ratios for a nice masonry effect
+const designSizes = [
+  { w: 500, h: 600 }, // 1 - portrait-ish
+  { w: 500, h: 600 }, // 2 - portrait-ish
+  { w: 500, h: 600 }, // 3 - portrait-ish
+  { w: 500, h: 600 }, // 4 - portrait-ish
+  { w: 500, h: 800 }, // 5 - tall
+  { w: 600, h: 380 }, // 6 - wide/short
+]
 
+const designFiles = artistPrefixes.flatMap((prefix) =>
+  designSizes.map((size, i) => ({
+    file: `designs/${prefix}-${i + 1}.jpg`,
+    w: size.w,
+    h: size.h,
+    seed: `${prefix}${i + 1}`,
+  }))
+)
+
+const otherFiles = [
   // --- supports (category grid on Supports page) ---
   { file: 'supports/textiles.jpg', w: 600, h: 400, seed: 'textiles' },
   { file: 'supports/papier.jpg', w: 600, h: 400, seed: 'papier' },
@@ -66,6 +57,8 @@ const files = [
   { file: 'rooms/salon-canape-gris.jpg', w: 1000, h: 600, seed: 'canape-gris' },
   { file: 'rooms/salon-canape-terracotta.jpg', w: 1000, h: 600, seed: 'canape-terracotta' },
 ]
+
+const files = [...designFiles, ...otherFiles]
 
 const baseDir = path.join(process.cwd(), 'public', 'images')
 

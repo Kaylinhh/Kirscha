@@ -6,20 +6,6 @@ export const artists = [
     bio: "Hello! Je suis étudiante en art et fashion victim avérée. Mon style s'inspire énormément des mangas dans la forme et de mes passions dans le fond :)",
     social: '@_s455ybug_',
     instagramUrl: 'https://instagram.com/_s455ybug_',
-    previewWorks: [
-      '/images/designs/s4ssybug-1.jpg',
-      '/images/designs/s4ssybug-2.jpg',
-      '/images/designs/s4ssybug-3.jpg',
-      '/images/designs/s4ssybug-4.jpg',
-    ],
-    works: [
-      '/images/designs/s4ssybug-1.jpg',
-      '/images/designs/s4ssybug-2.jpg',
-      '/images/designs/s4ssybug-3.jpg',
-      '/images/designs/s4ssybug-4.jpg',
-      '/images/designs/s4ssybug-5.jpg',
-      '/images/designs/s4ssybug-6.jpg',
-    ]
   },
   {
     id: 'a2',
@@ -27,20 +13,6 @@ export const artists = [
     bio: "Illustratrice freelance, fan de contrastes forts et de noir & blanc. J'aime raconter des histoires en une seule image.",
     social: '@minamala__',
     instagramUrl: 'https://instagram.com/minamala__',
-    previewWorks: [
-      '/images/designs/minamala-1.jpg',
-      '/images/designs/minamala-2.jpg',
-      '/images/designs/minamala-3.jpg',
-      '/images/designs/minamala-4.jpg',
-    ],
-    works: [
-      '/images/designs/minamala-1.jpg',
-      '/images/designs/minamala-2.jpg',
-      '/images/designs/minamala-3.jpg',
-      '/images/designs/minamala-4.jpg',
-      '/images/designs/minamala-5.jpg',
-      '/images/designs/minamala-6.jpg',
-    ]
   },
   {
     id: 'a3',
@@ -48,20 +20,6 @@ export const artists = [
     bio: "Pop art, humour noir et couleurs criardes. Je dessine ce qui me fait rire (ou pas).",
     social: '@vanillaandcrimes',
     instagramUrl: 'https://instagram.com/vanillaandcrimes',
-    previewWorks: [
-      '/images/designs/vanilla-1.jpg',
-      '/images/designs/vanilla-2.jpg',
-      '/images/designs/vanilla-3.jpg',
-      '/images/designs/vanilla-4.jpg',
-    ],
-    works: [
-      '/images/designs/vanilla-1.jpg',
-      '/images/designs/vanilla-2.jpg',
-      '/images/designs/vanilla-3.jpg',
-      '/images/designs/vanilla-4.jpg',
-      '/images/designs/vanilla-5.jpg',
-      '/images/designs/vanilla-6.jpg'
-    ]
   },
   {
     id: 'a4',
@@ -69,118 +27,42 @@ export const artists = [
     bio: "Juust drawing cute stuff ⭐",
     social: '@juusdrawings',
     instagramUrl: 'https://instagram.com/juusdrawings',
-    previewWorks: [
-      '/images/designs/juusdrawings-1.jpg',
-      '/images/designs/juusdrawings-2.jpg',
-      '/images/designs/juusdrawings-3.jpg',
-      '/images/designs/juusdrawings-4.jpg',
-    ],
-    works: [
-      '/images/designs/juusdrawings-1.jpg',
-      '/images/designs/juusdrawings-2.jpg',
-      '/images/designs/juusdrawings-3.jpg',
-      '/images/designs/juusdrawings-4.jpg',
-      '/images/designs/juusdrawings-5.jpg',
-      '/images/designs/juusdrawings-6.jpg'
-    ]
   },
 ]
 
-// ===== DESIGNS (artworks) =====
-// subject: 'anime' | 'voyage' | 'portrait' | 'animaux' | 'nourriture' | 'nature'
-// style: 'minimaliste' | 'enfantin' | 'cartoon' | 'realiste' | 'caricatural' | 'oneline' | 'geometrique' | 'abstrait' | 'manga' | 'traditionnel-japonais' | 'gravure'
-// colorPalette: 'chaudes' | 'froides' | 'pastels' | 'neutres'
+// ===== DESIGNS (artworks — single source of truth, linked to artists via artistId) =====
 export const designs = [
-  {
-    id: 'd1',
-    title: 'Forêt violette',
-    image: '/images/designs/s4ssybug-2.jpg',
-    artistId: 'a1',
-    subject: 'nature',
-    style: 'realiste',
-    colorPalette: 'froides',
-  },
-  {
-    id: 'd2',
-    title: 'Sugar Rone',
-    image: '/images/designs/s4ssybug-1.jpg',
-    artistId: 'a1',
-    subject: 'portrait',
-    style: 'manga',
-    colorPalette: 'pastels',
-  },
-  {
-    id: 'd3',
-    title: 'Sale rêve',
-    image: '/images/designs/minamala-1.jpg',
-    artistId: 'a2',
-    subject: 'portrait',
-    style: 'gravure',
-    colorPalette: 'neutres',
-  },
-  {
-    id: 'd4',
-    title: 'We spent last summer',
-    image: '/images/designs/minamala-2.jpg',
-    artistId: 'a2',
-    subject: 'portrait',
-    style: 'caricatural',
-    colorPalette: 'neutres',
-  },
-  {
-    id: 'd5',
-    title: 'Girls only',
-    image: '/images/designs/vanilla-1.jpg',
-    artistId: 'a3',
-    subject: 'animaux',
-    style: 'cartoon',
-    colorPalette: 'chaudes',
-  },
-  {
-    id: 'd6',
-    title: 'Chien tennis',
-    image: '/images/designs/vanilla-2.jpg',
-    artistId: 'a3',
-    subject: 'animaux',
-    style: 'cartoon',
-    colorPalette: 'chaudes',
-  },
-  {
-    id: 'd7',
-    title: 'Chat one line',
-    image: '/images/designs/minimals-1.jpg',
-    artistId: 'a4',
-    subject: 'animaux',
-    style: 'oneline',
-    colorPalette: 'neutres',
-  },
-  {
-    id: 'd8',
-    title: 'Corps one line',
-    image: '/images/designs/minimals-2.jpg',
-    artistId: 'a4',
-    subject: 'portrait',
-    style: 'oneline',
-    colorPalette: 'neutres',
-  },
-  {
-    id: 'd9',
-    title: 'Œuf au plat',
-    image: '/images/designs/vanilla-3.jpg',
-    artistId: 'a3',
-    subject: 'nourriture',
-    style: 'realiste',
-    colorPalette: 'chaudes',
-  },
-  {
-    id: 'd10',
-    title: 'Biche',
-    image: '/images/designs/minamala-3.jpg',
-    artistId: 'a2',
-    subject: 'animaux',
-    style: 'realiste',
-    colorPalette: 'chaudes',
-  },
+  // --- _s4ssybug_ (a1) ---
+  { id: 'd1', title: 'Sugar Rone', image: '/images/designs/s4ssybug-1.jpg', artistId: 'a1', subject: 'portrait', style: 'manga', colorPalette: 'pastels' },
+  { id: 'd2', title: 'Forêt violette', image: '/images/designs/s4ssybug-2.jpg', artistId: 'a1', subject: 'nature', style: 'realiste', colorPalette: 'froides' },
+  { id: 'd3', title: 'Sèche-cheveux', image: '/images/designs/s4ssybug-3.jpg', artistId: 'a1', subject: 'portrait', style: 'manga', colorPalette: 'pastels' },
+  { id: 'd4', title: 'My Little Pony girls', image: '/images/designs/s4ssybug-4.jpg', artistId: 'a1', subject: 'portrait', style: 'cartoon', colorPalette: 'pastels' },
+  { id: 'd5', title: 'Téléphone rouge', image: '/images/designs/s4ssybug-5.jpg', artistId: 'a1', subject: 'portrait', style: 'manga', colorPalette: 'chaudes' },
+  { id: 'd6', title: 'Croquis forêt', image: '/images/designs/s4ssybug-6.jpg', artistId: 'a1', subject: 'nature', style: 'oneline', colorPalette: 'neutres' },
+
+  // --- minamala_ (a2) ---
+  { id: 'd7', title: 'Sale rêve', image: '/images/designs/minamala-1.jpg', artistId: 'a2', subject: 'portrait', style: 'gravure', colorPalette: 'neutres' },
+  { id: 'd8', title: 'We spent last summer', image: '/images/designs/minamala-2.jpg', artistId: 'a2', subject: 'portrait', style: 'caricatural', colorPalette: 'neutres' },
+  { id: 'd9', title: 'Biche', image: '/images/designs/minamala-3.jpg', artistId: 'a2', subject: 'animaux', style: 'realiste', colorPalette: 'chaudes' },
+  { id: 'd10', title: 'Attack on Titan', image: '/images/designs/minamala-4.jpg', artistId: 'a2', subject: 'anime', style: 'manga', colorPalette: 'froides' },
+  { id: 'd11', title: 'Geisha', image: '/images/designs/minamala-5.jpg', artistId: 'a2', subject: 'portrait', style: 'traditionnel-japonais', colorPalette: 'neutres' },
+  { id: 'd12', title: 'Toits de ville', image: '/images/designs/minamala-6.jpg', artistId: 'a2', subject: 'voyage', style: 'gravure', colorPalette: 'neutres' },
+
+  // --- vanillaandcrimes (a3) ---
+  { id: 'd13', title: 'Girls only', image: '/images/designs/vanilla-1.jpg', artistId: 'a3', subject: 'animaux', style: 'cartoon', colorPalette: 'chaudes' },
+  { id: 'd14', title: 'Chien tennis', image: '/images/designs/vanilla-2.jpg', artistId: 'a3', subject: 'animaux', style: 'cartoon', colorPalette: 'chaudes' },
+  { id: 'd15', title: 'Œuf au plat', image: '/images/designs/vanilla-3.jpg', artistId: 'a3', subject: 'nourriture', style: 'realiste', colorPalette: 'chaudes' },
+  { id: 'd16', title: 'We spent last summer', image: '/images/designs/vanilla-4.jpg', artistId: 'a3', subject: 'portrait', style: 'caricatural', colorPalette: 'neutres' },
+  { id: 'd17', title: 'Rats girls only', image: '/images/designs/vanilla-5.jpg', artistId: 'a3', subject: 'animaux', style: 'cartoon', colorPalette: 'chaudes' },
+  { id: 'd18', title: 'So differently', image: '/images/designs/vanilla-6.jpg', artistId: 'a3', subject: 'portrait', style: 'geometrique', colorPalette: 'neutres' },
+
+  // --- minimals_ (a4) ---
+  { id: 'd19', title: 'Chat one line', image: '/images/designs/minimals-1.jpg', artistId: 'a4', subject: 'animaux', style: 'oneline', colorPalette: 'neutres' },
+  { id: 'd20', title: 'Corps one line', image: '/images/designs/minimals-2.jpg', artistId: 'a4', subject: 'portrait', style: 'oneline', colorPalette: 'neutres' },
+  { id: 'd21', title: 'Fleur one line', image: '/images/designs/minimals-3.jpg', artistId: 'a4', subject: 'nature', style: 'oneline', colorPalette: 'neutres' },
+  { id: 'd22', title: 'Minimaliste géo', image: '/images/designs/minimals-4.jpg', artistId: 'a4', subject: 'voyage', style: 'geometrique', colorPalette: 'neutres' },
+  { id: 'd23', title: 'Portrait abstrait', image: '/images/designs/minimals-5.jpg', artistId: 'a4', subject: 'portrait', style: 'abstrait', colorPalette: 'froides' },
+  { id: 'd24', title: 'Paysage minimal', image: '/images/designs/minimals-6.jpg', artistId: 'a4', subject: 'nature', style: 'minimaliste', colorPalette: 'pastels' },
 ]
 
 // ===== FILTER OPTIONS (for the dropdown menus) =====

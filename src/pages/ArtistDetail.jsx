@@ -1,12 +1,14 @@
 import { useState } from 'react'
 import { useParams } from 'react-router-dom'
 import { artists, supportCategories } from '../data/data'
+import { getWorksByArtist } from '../utils/artistWorks'
 import SupportPicker from '../components/preview/SupportPicker'
 
 function ArtistDetail() {
   const { name } = useParams()
   const artist = artists.find((a) => a.name === decodeURIComponent(name))
   const [selectedWork, setSelectedWork] = useState(null)
+  const works = getWorksByArtist(artist.id)
 
   if (!artist) {
     return <p className="p-8">Artiste introuvable.</p>
@@ -34,18 +36,18 @@ function ArtistDetail() {
         />
       ) : (
         <>
-          <p className="font-body text-kirscha-green-900 text-center max-w-xl mx-auto mt-4">
+          <p className="font-body text-kirscha-green-900 text-center w-full p-4 mx-auto mt-4">
             {artist.bio}
           </p>
 
           <div className="columns-2 sm:columns-3 gap-3 mt-10">
-            {artist.works.map((work, i) => (
+            {works.map((work) => (
               <img
-                key={i}
-                src={work}
+                key={work.id}
+                src={work.image}
                 alt=""
-                onClick={() => setSelectedWork(work)}
-                className="w-full mb-3 rounded-md break-inside-avoid cursor-pointer hover:opacity-80 transition"
+                onClick={() => setSelectedWork(work.image)}
+                className="w-full mb-3 rounded-md border border-kirscha-green-700 break-inside-avoid cursor-pointer hover:opacity-80 transition"
               />
             ))}
           </div>
