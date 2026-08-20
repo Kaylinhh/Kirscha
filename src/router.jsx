@@ -5,6 +5,7 @@ import Designs from './pages/Designs'
 import Artists from './pages/Artists'
 import ArtistDetail from './pages/ArtistDetail'
 import Supports from './pages/Supports'
+import SupportCategory from './pages/SupportCategory'
 import Profile from './pages/Profile'
 
 export const router = createBrowserRouter([
@@ -17,6 +18,7 @@ export const router = createBrowserRouter([
       { path: 'artistes', element: <Artists /> },
       { path: 'artistes/:name', element: <ArtistDetail /> },
       { path: 'supports', element: <Supports /> },
+      { path: 'supports/:categoryId', element: <SupportCategory /> },
       { path: 'profil', element: <Profile /> },
     ],
   },
