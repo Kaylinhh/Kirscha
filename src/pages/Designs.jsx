@@ -1,11 +1,14 @@
 import { useState } from 'react'
+import { useSearchParams } from 'react-router-dom'
 import { designs, filterOptions } from '../data/data'
 import FilterDropdown from '../components/designs/FilterDropdown'
 import SupportPicker from '../components/preview/SupportPicker'
 
 function Designs() {
+  const [searchParams] = useSearchParams()
+
   const [subject, setSubject] = useState(null)
-  const [style, setStyle] = useState(null)
+  const [style, setStyle] = useState(searchParams.get('style'))
   const [color, setColor] = useState(null)
   const [selectedWork, setSelectedWork] = useState(null)
 

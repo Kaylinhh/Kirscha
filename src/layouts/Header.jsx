@@ -1,4 +1,4 @@
-import { NavLink } from 'react-router-dom'
+import { Link, NavLink } from 'react-router-dom'
 
 const links = [
   { to: '/', label: 'Accueil' },
@@ -11,7 +11,9 @@ const links = [
 function Header() {
   return (
     <header className="flex items-center justify-between px-8 py-4 border-b border-kirscha-green-400">
-      <span className="font-display text-2xl text-kirscha-green-700">Kirscha</span>
+      <Link to="/" className="font-display text-2xl text-kirscha-green-700">
+        Kirscha
+      </Link>
       <nav className="flex gap-6 font-body">
         {links.map((link) => (
           <NavLink

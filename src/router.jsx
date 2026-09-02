@@ -8,6 +8,13 @@ import Supports from './pages/Supports'
 import SupportCategory from './pages/SupportCategory'
 import SupportItem from './pages/SupportItem'
 import Profile from './pages/Profile'
+import RoomList from './pages/RoomList'
+import RoomEditor from './pages/RoomEditor'
+import MyInfo from './pages/MyInfo'
+import Loyalty from './pages/Loyalty'
+import Purchases from './pages/Purchases'
+import Favorites from './pages/Favorites'
+
 
 export const router = createBrowserRouter([
   {
@@ -22,6 +29,12 @@ export const router = createBrowserRouter([
       { path: 'supports/:categoryId', element: <SupportCategory /> },
       { path: 'supports/:categoryId/:itemId', element: <SupportItem /> },
       { path: 'profil', element: <Profile /> },
+      { path: 'profil/chez-moi', element: <RoomList /> },
+      { path: 'profil/chez-moi/:roomId', element: <RoomEditor /> },
+      { path: 'profil/infos', element: <MyInfo /> },
+      { path: 'profil/fidelite', element: <Loyalty /> },
+      { path: 'profil/achats', element: <Purchases /> },
+      { path: 'profil/favoris', element: <Favorites /> },
     ],
   },
 ])

@@ -5,12 +5,11 @@ import ArtistCard from '../components/artists/ArtistCard'
 
 // 3 vertical strips inside one aspect-4/3 box, single badge overlapping the bottom
 function StyleCard({ styleId, label }) {
-  // Reuse up to 3 designs of this style; if fewer exist, repeat to fill the 3 slots
   const matches = designs.filter((d) => d.style === styleId)
   const images = [0, 1, 2].map((i) => matches[i % matches.length]?.image).filter(Boolean)
 
   return (
-    <div className="pb-6">
+    <Link to={`/designs?style=${styleId}`} className="block pb-6 group">
       <div className="relative">
         <div className="grid grid-cols-3 gap-1 aspect-4/3 overflow-hidden rounded-md">
           {images.map((img, i) => (
@@ -18,15 +17,15 @@ function StyleCard({ styleId, label }) {
               key={i}
               src={img}
               alt={label}
-              className="w-full h-full object-cover border border-kirscha-green-700"
+              className="w-full h-full object-cover border border-kirscha-green-700 group-hover:brightness-75 transition"
             />
           ))}
         </div>
-        <span className="absolute left-1/2 bottom-0 -translate-x-1/2 translate-y-1/2 bg-kirscha-green-700 text-kirscha-green-100 font-body text-sm px-4 py-2 rounded-full whitespace-nowrap capitalize">
+        <span className="absolute left-1/2 bottom-0 -translate-x-1/2 translate-y-1/2 bg-kirscha-green-700 group-hover:bg-kirscha-green-900 transition text-kirscha-green-100 font-body text-sm px-4 py-2 rounded-full whitespace-nowrap capitalize">
           {label}
         </span>
       </div>
-    </div>
+    </Link>
   )
 }
 

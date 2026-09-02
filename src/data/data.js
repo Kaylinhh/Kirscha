@@ -43,7 +43,7 @@ export const designs = [
   // --- minamala_ (a2) ---
   { id: 'd7', title: 'Sale rêve', image: '/images/designs/minamala-1.jpg', artistId: 'a2', subject: 'portrait', style: 'gravure', colorPalette: 'neutres' },
   { id: 'd8', title: 'We spent last summer', image: '/images/designs/minamala-2.jpg', artistId: 'a2', subject: 'portrait', style: 'caricatural', colorPalette: 'neutres' },
-  { id: 'd9', title: 'Biche', image: '/images/designs/minamala-3.jpg', artistId: 'a2', subject: 'animaux', style: 'realiste', colorPalette: 'chaudes' },
+  { id: 'd9', title: 'Biche', image: '/images/designs/minamala-3.jpg', artistId: 'a2', subject: 'animaux', style: 'enfantin', colorPalette: 'chaudes' },
   { id: 'd10', title: 'Attack on Titan', image: '/images/designs/minamala-4.jpg', artistId: 'a2', subject: 'anime', style: 'manga', colorPalette: 'froides' },
   { id: 'd11', title: 'Geisha', image: '/images/designs/minamala-5.jpg', artistId: 'a2', subject: 'portrait', style: 'traditionnel-japonais', colorPalette: 'neutres' },
   { id: 'd12', title: 'Toits de ville', image: '/images/designs/minamala-6.jpg', artistId: 'a2', subject: 'voyage', style: 'gravure', colorPalette: 'neutres' },
@@ -59,7 +59,7 @@ export const designs = [
   // --- minimals_ (a4) ---
   { id: 'd19', title: 'Chat one line', image: '/images/designs/minimals-1.jpg', artistId: 'a4', subject: 'animaux', style: 'oneline', colorPalette: 'neutres' },
   { id: 'd20', title: 'Corps one line', image: '/images/designs/minimals-2.jpg', artistId: 'a4', subject: 'portrait', style: 'oneline', colorPalette: 'neutres' },
-  { id: 'd21', title: 'Fleur one line', image: '/images/designs/minimals-3.jpg', artistId: 'a4', subject: 'nature', style: 'oneline', colorPalette: 'neutres' },
+  { id: 'd21', title: 'Fleur one line', image: '/images/designs/minimals-3.jpg', artistId: 'a4', subject: 'nature', style: 'enfantin', colorPalette: 'neutres' },
   { id: 'd22', title: 'Minimaliste géo', image: '/images/designs/minimals-4.jpg', artistId: 'a4', subject: 'voyage', style: 'geometrique', colorPalette: 'neutres' },
   { id: 'd23', title: 'Portrait abstrait', image: '/images/designs/minimals-5.jpg', artistId: 'a4', subject: 'portrait', style: 'abstrait', colorPalette: 'froides' },
   { id: 'd24', title: 'Paysage minimal', image: '/images/designs/minimals-6.jpg', artistId: 'a4', subject: 'nature', style: 'minimaliste', colorPalette: 'pastels' },
