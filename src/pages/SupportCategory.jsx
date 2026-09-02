@@ -16,18 +16,19 @@ function SupportCategory() {
         {category.label}
       </h1>
 
-      <div className="grid grid-cols-2 sm:grid-cols-4 gap-6">
+      <div className="grid grid-cols-2 sm:grid-cols-4 gap-4">
         {category.items.map((item) => (
-          <div key={item.id}>
+          <Link
+            key={item.id}
+            to={`/supports/${category.id}/${item.id}`}
+            className="block group"
+          >
             <img
               src={item.mockup}
               alt={item.label}
-              className="w-full aspect-square object-cover rounded-md border border-kirscha-green-700"
+              className="w-full aspect-square object-cover rounded-md border border-kirscha-green-700 group-hover:brightness-75 transition"
             />
-            <p className="text-center font-body text-kirscha-green-900 mt-2">
-              {item.label}
-            </p>
-          </div>
+          </Link>
         ))}
       </div>
     </div>

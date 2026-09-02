@@ -1,4 +1,3 @@
-// scripts/generate-placeholders.js
 // One-off script: downloads a placeholder image for every path referenced
 // in data.js, using picsum.photos. Run once, then replace files manually
 // in public/images/ as real visuals become available.
@@ -10,12 +9,12 @@ const artistPrefixes = ['s4ssybug', 'minamala', 'vanilla', 'minimals']
 
 // 6 designs per artist, varied ratios for a nice masonry effect
 const designSizes = [
-  { w: 500, h: 600 }, // 1 - portrait-ish
-  { w: 500, h: 600 }, // 2 - portrait-ish
-  { w: 500, h: 600 }, // 3 - portrait-ish
-  { w: 500, h: 600 }, // 4 - portrait-ish
-  { w: 500, h: 800 }, // 5 - tall
-  { w: 600, h: 380 }, // 6 - wide/short
+  { w: 500, h: 600 },
+  { w: 500, h: 600 },
+  { w: 500, h: 600 },
+  { w: 500, h: 600 },
+  { w: 500, h: 800 },
+  { w: 600, h: 380 },
 ]
 
 const designFiles = artistPrefixes.flatMap((prefix) =>
@@ -44,6 +43,35 @@ const otherFiles = [
   { file: 'previews/carte-blank.jpg', w: 600, h: 600, seed: 'carte' },
   { file: 'previews/coque-blank.jpg', w: 600, h: 600, seed: 'coque' },
   { file: 'previews/mug-blank.jpg', w: 600, h: 600, seed: 'mug' },
+
+  // --- product variant examples (T-shirt: manches longues, hoodie, débardeur, etc.) ---
+  { file: 'previews/tshirt-1.jpg', w: 500, h: 500, seed: 'tshirt-ex1' },
+  { file: 'previews/tshirt-2.jpg', w: 500, h: 500, seed: 'tshirt-ex2' },
+  { file: 'previews/tshirt-3.jpg', w: 500, h: 500, seed: 'tshirt-ex3' },
+  { file: 'previews/sweatshirt-1.jpg', w: 500, h: 500, seed: 'sweat-ex1' },
+  { file: 'previews/sweatshirt-2.jpg', w: 500, h: 500, seed: 'sweat-ex2' },
+  { file: 'previews/sweatshirt-3.jpg', w: 500, h: 500, seed: 'sweat-ex3' },
+  { file: 'previews/casquette-1.jpg', w: 500, h: 500, seed: 'casq-ex1' },
+  { file: 'previews/casquette-2.jpg', w: 500, h: 500, seed: 'casq-ex2' },
+  { file: 'previews/casquette-3.jpg', w: 500, h: 500, seed: 'casq-ex3' },
+  { file: 'previews/totebag-1.jpg', w: 500, h: 500, seed: 'tote-ex1' },
+  { file: 'previews/totebag-2.jpg', w: 500, h: 500, seed: 'tote-ex2' },
+  { file: 'previews/totebag-3.jpg', w: 500, h: 500, seed: 'tote-ex3' },
+  { file: 'previews/linge-1.jpg', w: 500, h: 500, seed: 'linge-ex1' },
+  { file: 'previews/linge-2.jpg', w: 500, h: 500, seed: 'linge-ex2' },
+  { file: 'previews/linge-3.jpg', w: 500, h: 500, seed: 'linge-ex3' },
+  { file: 'previews/poster-1.jpg', w: 500, h: 500, seed: 'poster-ex1' },
+  { file: 'previews/poster-2.jpg', w: 500, h: 500, seed: 'poster-ex2' },
+  { file: 'previews/poster-3.jpg', w: 500, h: 500, seed: 'poster-ex3' },
+  { file: 'previews/carte-1.jpg', w: 500, h: 500, seed: 'carte-ex1' },
+  { file: 'previews/carte-2.jpg', w: 500, h: 500, seed: 'carte-ex2' },
+  { file: 'previews/carte-3.jpg', w: 500, h: 500, seed: 'carte-ex3' },
+  { file: 'previews/coque-1.jpg', w: 500, h: 500, seed: 'coque-ex1' },
+  { file: 'previews/coque-2.jpg', w: 500, h: 500, seed: 'coque-ex2' },
+  { file: 'previews/coque-3.jpg', w: 500, h: 500, seed: 'coque-ex3' },
+  { file: 'previews/mug-1.jpg', w: 500, h: 500, seed: 'mug-ex1' },
+  { file: 'previews/mug-2.jpg', w: 500, h: 500, seed: 'mug-ex2' },
+  { file: 'previews/mug-3.jpg', w: 500, h: 500, seed: 'mug-ex3' },
 
   // --- rooms (base + per-element color variants) ---
   { file: 'rooms/chambre-base.jpg', w: 1000, h: 600, seed: 'chambre-base' },

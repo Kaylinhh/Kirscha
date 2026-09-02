@@ -103,11 +103,56 @@ export const supportCategories = [
     label: 'Textiles',
     image: '/images/supports/textiles.jpg',
     items: [
-      { id: 'tshirt', label: 'T-shirt', mockup: '/images/previews/tshirt-blank.jpg' },
-      { id: 'sweatshirt', label: 'Sweatshirt', mockup: '/images/previews/sweatshirt-blank.jpg' },
-      { id: 'casquette', label: 'Casquette', mockup: '/images/previews/casquette-blank.jpg' },
-      { id: 'totebag', label: 'Tote Bag', mockup: '/images/previews/totebag-blank.jpg' },
-      { id: 'linge', label: 'Coussins et linge de lit', mockup: '/images/previews/linge-blank.jpg' },
+      {
+        id: 'tshirt',
+        label: 'T-shirt',
+        mockup: '/images/previews/tshirt-blank.jpg',
+        examples: [
+          '/images/previews/tshirt-1.jpg',
+          '/images/previews/tshirt-2.jpg',
+          '/images/previews/tshirt-3.jpg',
+        ],
+      },
+      {
+        id: 'sweatshirt',
+        label: 'Sweatshirt',
+        mockup: '/images/previews/sweatshirt-blank.jpg',
+        examples: [
+          '/images/previews/sweatshirt-1.jpg',
+          '/images/previews/sweatshirt-2.jpg',
+          '/images/previews/sweatshirt-3.jpg',
+        ],
+      },
+      {
+        id: 'casquette',
+        label: 'Casquette',
+        mockup: '/images/previews/casquette-blank.jpg',
+        examples: [
+          '/images/previews/casquette-1.jpg',
+          '/images/previews/casquette-2.jpg',
+          '/images/previews/casquette-3.jpg',
+        ],
+      },
+      {
+        id: 'totebag',
+        label: 'Tote Bag',
+        mockup: '/images/previews/totebag-blank.jpg',
+        examples: [
+          '/images/previews/totebag-1.jpg',
+          '/images/previews/totebag-2.jpg',
+          '/images/previews/totebag-3.jpg',
+        ],
+      },
+      {
+        id: 'linge',
+        label: 'Coussins et linge de lit',
+        mockup: '/images/previews/linge-blank.jpg',
+        examples: [
+          '/images/previews/linge-1.jpg',
+          '/images/previews/linge-2.jpg',
+          '/images/previews/linge-3.jpg',
+        ],
+      },
     ],
   },
   {
@@ -115,8 +160,26 @@ export const supportCategories = [
     label: 'Papier',
     image: '/images/supports/papier.jpg',
     items: [
-      { id: 'poster', label: 'Poster', mockup: '/images/previews/poster-blank.jpg' },
-      { id: 'carte', label: 'Carte postale', mockup: '/images/previews/carte-blank.jpg' },
+      {
+        id: 'poster',
+        label: 'Poster',
+        mockup: '/images/previews/poster-blank.jpg',
+        examples: [
+          '/images/previews/poster-1.jpg',
+          '/images/previews/poster-2.jpg',
+          '/images/previews/poster-3.jpg',
+        ],
+      },
+      {
+        id: 'carte',
+        label: 'Carte postale',
+        mockup: '/images/previews/carte-blank.jpg',
+        examples: [
+          '/images/previews/carte-1.jpg',
+          '/images/previews/carte-2.jpg',
+          '/images/previews/carte-3.jpg',
+        ],
+      },
     ],
   },
   {
@@ -124,7 +187,16 @@ export const supportCategories = [
     label: 'Accessoires',
     image: '/images/supports/accessoires.jpg',
     items: [
-      { id: 'coque', label: 'Coque de téléphone', mockup: '/images/previews/coque-blank.jpg' },
+      {
+        id: 'coque',
+        label: 'Coque de téléphone',
+        mockup: '/images/previews/coque-blank.jpg',
+        examples: [
+          '/images/previews/coque-1.jpg',
+          '/images/previews/coque-2.jpg',
+          '/images/previews/coque-3.jpg',
+        ],
+      },
     ],
   },
   {
@@ -132,7 +204,16 @@ export const supportCategories = [
     label: 'Vaisselle',
     image: '/images/supports/vaisselle.jpg',
     items: [
-      { id: 'mug', label: 'Mug', mockup: '/images/previews/mug-blank.jpg' },
+      {
+        id: 'mug',
+        label: 'Mug',
+        mockup: '/images/previews/mug-blank.jpg',
+        examples: [
+          '/images/previews/mug-1.jpg',
+          '/images/previews/mug-2.jpg',
+          '/images/previews/mug-3.jpg',
+        ],
+      },
     ],
   },
 ]
